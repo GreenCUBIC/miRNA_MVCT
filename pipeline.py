@@ -9,6 +9,7 @@ from sklearn.externals import joblib
 import smote
 from subprocess import call
 
+#This section of the code is for test/train data set creation
 m=0
 for n in range (10, 150):
  #n=10
@@ -75,7 +76,7 @@ for n in range (10, 150):
         text2 = nline2.partition(">")[0]
         outfile.write(text2)
         outfile.write('\n')
-
+#End of test/train data set creation
 
     fs = FeatureSet()
     stage=m
